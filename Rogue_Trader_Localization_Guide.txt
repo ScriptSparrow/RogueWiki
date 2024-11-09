@@ -1,0 +1,64 @@
+This tutorial covers item localization. Localization enables defining essential attributes for items or talents, such as DisplayName, Description, FlavorText, and icons.
+
+1. Create a enGB.json file inside the localization folder of your mod
+
+2. paste the following
+
+{
+	"strings": {
+		"blank_name": {
+			"Text": "text to fill"
+		},
+		"blank_name": {
+			"Text": "text to fill"
+		},
+		"blank_name": {
+			"Text": "text to fill"
+		},
+		"blank_name": {
+			"Text": "text to fill"
+		}
+	}
+}
+	
+	Note: While it is easy to add new strings, be aware that the last entry needs the , omitted.
+
+3. open the blueprint you want to localize inside a text editor
+
+4. scroll to m_DisplayName
+
+5. Look for "m_Key": "This will display a lot of numbers",
+
+6. Change it to something that is appropriate for what your editing, for example:
+		"m_key": "NewBoltPistol_DisplayName"
+		
+7. Now edit the enGB.json file to give it an actual entry.
+
+	{
+		"strings": {
+			"NewBoltPistol_DisplayName": {
+				"Text": "New Bolt Pistol"
+			}
+		}
+	}
+	
+
+8. Done
+
+Other options are:
+
+a. Description
+b. FlavorText
+
+Follow the same steps 1 to 8, however it is advised to keep your text clean, so you can read it back.
+Example:
+
+		"Grimflare_DisplayName": {
+			"Text": "Grimflare"
+		},
+		"Grimflare_Description": {
+			"Text": "This pistol deals energy damage and inflicts burning on its targets."
+		},
+		"Grimflare_FlavorText": {
+			"Text": "Grimflare is equipped with a miniaturized plasma generator, which superheats the air around each shot, creating a radiant aura of heat. Designed for the Mechanicus, it’s devastating against unarmored foes, searing flesh and bone with each shot."
+		}
